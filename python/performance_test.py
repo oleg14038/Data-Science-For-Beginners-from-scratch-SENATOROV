@@ -1,4 +1,7 @@
+"""This module performs various performance tests for the application."""
+
 import time
+
 start_time = time.time()
 total = 0
 for i in range(1, 10000000):
