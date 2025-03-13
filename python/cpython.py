@@ -1,4 +1,5 @@
 """This module demonstrates CPython interpreter functionality."""
+
 from IPython.display import Image
 
 # 1. Что такое CPython и чем он отличается от Python?
@@ -10,7 +11,7 @@ from IPython.display import Image
 # Отличия CPython от Python:
 #
 #     Python — это язык программирования, его спецификация описывает синтаксис и семантику.
-#     
+#
 #     CPython — это конкретная реализация Python, написанная на C,
 #      которая интерпретирует и выполняет Python-код.
 #
@@ -18,7 +19,7 @@ from IPython.display import Image
 #
 #     Является официальной реализацией Python.
 #     Использует интерпретатор и виртуальную машину на C.
-#     Поддерживает GIL (Global Interpreter Lock), что ограничивает 
+#     Поддерживает GIL (Global Interpreter Lock), что ограничивает
 #     одновременное выполнение потоков.
 #     Позволяет работать с расширениями на C, такими как NumPy и Pandas.
 #
@@ -34,16 +35,13 @@ from IPython.display import Image
 # +
 image1 = "C:/Users/adm/Downloads/393432526"
 
-image2="-325fd195-ad0d-4a3b-897f-2af536179877.png"
+image2 = "-325fd195-ad0d-4a3b-897f-2af536179877.png"
 
-full_imag = image1+image2
+full_imag = image1 + image2
 
 img1 = Image(full_imag)
 
 img1
-
-
-
 # -
 
 # Основные реализации Python:
@@ -141,7 +139,7 @@ img1
 
 # 11. Какая команда используется для запуска файла с помощью CPython
 
-# Для запуска Python-файла с помощью CPython используется команда:  
+# Для запуска Python-файла с помощью CPython используется команда:
 #
 # python filename.py
 #
@@ -150,7 +148,7 @@ img1
 # python3.11 filename.py
 #
 
-# 12. Можно ли запускать текстовые файлы через интерпретатор Python? Почему? 
+# 12. Можно ли запускать текстовые файлы через интерпретатор Python? Почему?
 #
 # Нет, обычные текстовые файлы (.txt) нельзя запускать через интерпретатор Python, потому что они не содержат исполняемый Python-код.
 #
@@ -164,12 +162,12 @@ img1
 
 # 13. Как указать путь к интерпретатору и файлу для выполнения кода
 #
-# C:\Users\adm\AppData\Local\Programs\Python\Python39\python.exe C:\path\to\script.py - Windows 
+# C:\Users\adm\AppData\Local\Programs\Python\Python39\python.exe C:\path\to\script.py - Windows
 #
 # /usr/bin/python3 /home/user/script.py - Linux/macOS
 #
 #
-#  
+#
 
 # 14. Основные отличия PyPy от CPython
 #
@@ -228,8 +226,8 @@ img1
 #
 #     Через командную строку:
 #         Откройте терминал или командную строку.
-#         Перейдите в директорию с вашим скриптом: 
-#         
+#         Перейдите в директорию с вашим скриптом:
+#
 #         cd путь/к/вашему/скрипту
 #
 
@@ -253,16 +251,13 @@ img1
 #
 # Однако стоит отметить, что выигрыш в производительности может варьироваться в зависимости от конкретного приложения и его характера. В некоторых случаях, особенно при использовании C-расширений или ввода-вывода, разница в скорости может быть менее заметной.
 
-# Практика 1 
-#  python --version 
+# Практика 1
+#  python --version
 
-# +
-
-ima = Image("C:/Users/adm/Pictures/2025-02-10_15-33-19.png") 
+ima = Image("C:/Users/adm/Pictures/2025-02-10_15-33-19.png")
 ima
-# -
 
-# Практика2 
+# Практика2
 # Для выполнения указанных вами действий, выполните следующие шаги:
 #
 # 1. Найдите папку, где установлен Python:
@@ -303,7 +298,7 @@ ima1 = Image("C:/Users/adm/Downloads/2025-02-11_08-30-38.png")
 ima1
 
 # +
-ima3= Image("C:/Users/adm/Downloads/2025-02-11_08-47-52.png")
+ima3 = Image("C:/Users/adm/Downloads/2025-02-11_08-47-52.png")
 
 ima3
 # -
