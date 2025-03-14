@@ -1,6 +1,6 @@
 """This module demonstrates CPython interpreter functionality."""
 
-from IPython.display import Image
+from PIL import Image
 
 # 1. Что такое CPython и чем он отличается от Python?
 #
@@ -39,7 +39,7 @@ image2 = "-325fd195-ad0d-4a3b-897f-2af536179877.png"
 
 full_imag = image1 + image2
 
-img1 = Image(full_imag)
+img1 = Image.open(full_imag)
 
 img1
 # -
@@ -254,7 +254,7 @@ img1
 # Практика 1
 #  python --version
 
-ima = Image("C:/Users/adm/Pictures/2025-02-10_15-33-19.png")
+ima = Image.open("C:/Users/adm/Pictures/2025-02-10_15-33-19.png")
 ima
 
 # Практика2
@@ -294,16 +294,16 @@ ima
 # Обратите внимание, что количество файлов на C в директории include может варьироваться в зависимости от версии Python и операционной системы.
 #
 
-ima1 = Image("C:/Users/adm/Downloads/2025-02-11_08-30-38.png")
+ima1 = Image.open("C:/Users/adm/Downloads/2025-02-11_08-30-38.png")
 ima1
 
 # +
-ima3 = Image("C:/Users/adm/Downloads/2025-02-11_08-47-52.png")
+ima3 = Image.open("C:/Users/adm/Downloads/2025-02-11_08-47-52.png")
 
 ima3
 # -
 
-ima4 = Image("C:/Users/adm/Downloads/2025-02-11_08-52-52.png")
+ima4 = Image.open("C:/Users/adm/Downloads/2025-02-11_08-52-52.png")
 ima4
 
 ima5 = Image("C:/Users/adm/Downloads/2025-02-11_08-59-59.png")
