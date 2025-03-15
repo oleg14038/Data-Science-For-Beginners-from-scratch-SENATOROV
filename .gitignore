@@ -238,8 +238,7 @@ target/
 *.env  # Environment variable files
 coverage/
 
-/Math/calculus/theory
-/Math/school_theory
+
 
 *.png
 *.jpg
@@ -332,4 +331,5 @@ coverage/
 *.indd # Adobe InDesign
 *.xd   # Adobe XD
 
-
+/Math/calculus/theory
+/Math/school_theory
