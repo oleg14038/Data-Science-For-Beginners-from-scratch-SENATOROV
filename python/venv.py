@@ -1,4 +1,5 @@
 """Issue cpython."""
+
 from PIL import Image
 
 # python -m venv venv - создаёт виртуальное окружение в папке venv.
@@ -7,7 +8,7 @@ from PIL import Image
 #
 # python -m venv — запускает модуль venv, встроенный в Python.
 #
-# venv (второй аргумент) — имя папки, в которой будет 
+# venv (второй аргумент) — имя папки, в которой будет
 # создано виртуальное окружение
 #
 #
@@ -16,9 +17,9 @@ from PIL import Image
 # Копируется исполняемый файл Python.
 # Устанавливается локальный менеджер пакетов pip.
 #
-# После создания окружения его нужно активировать 
-# перед установкой 
-# зависимостей: venv\Scripts\activate, 
+# После создания окружения его нужно активировать
+# перед установкой
+# зависимостей: venv\Scripts\activate,
 #
 # Windows (PowerShell): venv\Scripts\Activate.ps1
 #
@@ -83,12 +84,12 @@ from PIL import Image
 #
 #
 #
-# conda create -n env_name python=3.5 - cоздаёт новое виртуальное 
+# conda create -n env_name python=3.5 - cоздаёт новое виртуальное
 # окружение Conda с именем env_name и устанавливает в него Python 3.5.
 #
 # conda create — создаёт новое окружение.
 #
-# -n env_name — задаёт имя окружения (env_name можно заменить 
+# -n env_name — задаёт имя окружения (env_name можно заменить
 # на любое другое имя).
 #
 # python=3.5 — устанавливает конкретную версию Python (в данном случае 3.5)
@@ -98,7 +99,7 @@ from PIL import Image
 #
 #
 #
-# conda env update -n env_name -f file.yml - Обновляет окружение Conda 
+# conda env update -n env_name -f file.yml - Обновляет окружение Conda
 # env_name на основе конфигурационного файла file.yml
 #
 # conda env update — обновляет существующее окружение.
@@ -120,7 +121,7 @@ from PIL import Image
 #
 # conda clean — очищает различные кеши и временные файлы.
 #
-# -a — опция, которая указывает на полную очистку, 
+# -a — опция, которая указывает на полную очистку,
 # включая все пакеты и кеши.
 #
 #
@@ -162,7 +163,7 @@ imag2
 #
 #
 
-# 5. 
+# 5.
 # pip freeze > requirements.txt
 # conda env export > environment.yml - Эти команды используются для сохранения списка установленных пакетов, чтобы в будущем можно было легко восстановить окружение.
 #
@@ -176,12 +177,12 @@ imag3 = Image.open("C:/Users/adm/Pictures/VENV4.PNG")
 imag3
 # -
 
-# 6. 
+# 6.
 # pip install -r requirements.txt (для venv) - Устанавливает библиотеки, перечисленные в requirements.txt, с указанными версиями.
 #
 # Как использовать?
 #
-# Активируйте виртуальное окружение (venv): 
+# Активируйте виртуальное окружение (venv):
 #
 # source VENV/bin/activate  # (Linux/macOS)
 #
@@ -193,7 +194,7 @@ imag3
 #
 # conda env create -f environment.yml (для conda) - Создаёт новое окружение и устанавливает пакеты из environment.yml.
 #
-# Как использовать? 
+# Как использовать?
 #
 # conda env create -f environment.yml
 # conda activate SENATOROV
@@ -209,7 +210,7 @@ imag3
 #
 #     conda включает базовое окружение, в котором уже есть библиотеки (например, numpy, pandas, scipy, matplotlib).
 #
-#     venv создаёт пустое окружение, в котором только pip и базовые инструменты Python.   
+#     venv создаёт пустое окружение, в котором только pip и базовые инструменты Python.
 
 # +
 9.0
@@ -218,7 +219,7 @@ imag4 = Image.open("C:/Users/adm/Pictures/VENV5.PNG")
 imag4
 # -
 
-# 10. 
+# 10.
 # Зачем нужно виртуальное окружение (venv, conda)?
 #
 # Виртуальное окружение создаёт изолированную среду для работы с Python-проектом, чтобы избежать конфликтов версий библиотек и зависимостей.
