@@ -283,5 +283,7 @@ imag4
 # conda activate myenv  # Активация
 #
 # conda install numpy pandas  # Установка библиотек
-#
-#
+
+
+
+
