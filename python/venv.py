@@ -1,128 +1,109 @@
-"""Issue cpython."""
+"""Issue venv."""
 
 from PIL import Image
 
-# python -m venv venv - создаёт виртуальное окружение в папке venv.
+#     1. python -m venv venv - создаёт виртуальное окружение в папке venv.
 #
-# Разбор:
+#     Разбор:
 #
-# python -m venv — запускает модуль venv, встроенный в Python.
+#     python -m venv — запускает модуль venv, встроенный в Python.
 #
-# venv (второй аргумент) — имя папки, в которой будет
-# создано виртуальное окружение
-#
-#
-# Создаётся каталог venv.
-# Внутри него создаются подпапки (bin, lib, include и др.).
-# Копируется исполняемый файл Python.
-# Устанавливается локальный менеджер пакетов pip.
-#
-# После создания окружения его нужно активировать
-# перед установкой
-# зависимостей: venv\Scripts\activate,
-#
-# Windows (PowerShell): venv\Scripts\Activate.ps1
-#
-# Linux/macOS: source venv/bin/activate
+#     venv (второй аргумент) — имя папки, в которой будет
+#     создано виртуальное окружение
 #
 #
+#     Создаётся каталог venv.
+#     Внутри него создаются подпапки (bin, lib, include и др.).
+#     Копируется исполняемый файл Python.
+#     Устанавливается локальный менеджер пакетов pip.
 #
-
-# 1.1  pip list - выводит список установленных пакетов в текущем окружении Python.
+#     После создания окружения его нужно активировать
+#     перед установкой
+#     зависимостей: venv\Scripts\activate,
 #
-# Package    Version
-# ---------- -------
-# pip        23.0.1
-# setuptools 65.5.0
-# wheel      0.38.4
-# numpy      1.24.2
-# pandas     1.5.3
+#     Windows (PowerShell): venv\Scripts\Activate.ps1
 #
-#
-# Полезные флаги:
-#
-# pip list --format=columns — (по умолчанию) вывод в виде таблицы.
-#
-# pip list --format=freeze — формат, совместимый с requirements.txt.
-#
-# pip list --outdated — показывает устаревшие пакеты.
-#
-# pip list --not-required — пакеты, не являющиеся зависимостями других.
-#
-# Сохранение списка пакетов в файл
-#
-#
-# pip freeze > requirements.txt - Создаст файл requirements.txt, который можно использовать для установки зависимостей в другом окружении
-#
-# pip install -r requirements.txt - Устанавливает пакеты, указанные в requirements.txt.
-#
-#
+#     Linux/macOS: source venv/bin/activate
 #
 #
 #
 
-# 2. conda env list or conda info --envs - выводит список всех существующих виртуальных окружений Conda.
+#     1.1  pip list - выводит список установленных пакетов в текущем окружении Python.
+#
+#     Package    Version
+#     ---------- -------
+#     pip        23.0.1
+#     setuptools 65.5.0
+#     wheel      0.38.4
+#     numpy      1.24.2
+#     pandas     1.5.3
 #
 #
-# Пример вывода:
+#     Полезные флаги:
 #
-# conda environments:
-# base                  *  /home/user/miniconda3
+#     pip list --format=columns — (по умолчанию) вывод в виде таблицы.
 #
-# ml_env                  /home/user/miniconda3/envs/ml_env
+#     pip list --format=freeze — формат, совместимый с requirements.txt.
 #
-# data_env                /home/user/miniconda3/envs/data_env
+#     pip list --outdated — показывает устаревшие пакеты.
 #
+#     pip list --not-required — пакеты, не являющиеся зависимостями других.
 #
-# base — базовое окружение Conda, создаётся при установке.
-#
-# * — текущее активное окружение.
-#
-# Остальные строки — пользовательские окружения и их пути.
+#     Сохранение списка пакетов в файл
 #
 #
+#     1. pip freeze > requirements.txt - Создаст файл requirements.txt, который можно использовать для установки зависимостей в другом окружении
 #
-#
-#
-# conda create -n env_name python=3.5 - cоздаёт новое виртуальное
-# окружение Conda с именем env_name и устанавливает в него Python 3.5.
-#
-# conda create — создаёт новое окружение.
-#
-# -n env_name — задаёт имя окружения (env_name можно заменить
-# на любое другое имя).
-#
-# python=3.5 — устанавливает конкретную версию Python (в данном случае 3.5)
-#
-# После создания: conda activate env_name
-# Деактивировать: conda deactivate
+#     2. pip install -r requirements.txt - Устанавливает пакеты, указанные в requirements.txt.
 #
 #
 #
-# conda env update -n env_name -f file.yml - Обновляет окружение Conda
-# env_name на основе конфигурационного файла file.yml
-#
-# conda env update — обновляет существующее окружение.
-#
-# -n env_name — указывает, какое окружение обновлять.
-#
-# -f file.yml — указывает YAML-файл с зависимостями.
 #
 #
-# source activate env_name - Активирует виртуальное окружение Conda с именем env_name только для старых версий
+
+# 2. Что делает каждая команда в списке ниже ?
 #
-# source — выполняет команду в текущем терминале (нужно в Linux/macOS).
-#
-# activate env_name — активирует окружение.
-#
-#
-# conda deactivate - деактивации окружения
+#     1. conda env list or conda info --envs - выводит список всех существующих виртуальных окружений Conda.
 #
 #
-# conda clean — очищает различные кеши и временные файлы.
+#     Пример вывода:
 #
-# -a — опция, которая указывает на полную очистку,
-# включая все пакеты и кеши.
+#     conda environments:
+#     base                  *  /home/user/miniconda3
+#
+#     ml_env                  /home/user/miniconda3/envs/ml_env
+#
+#     data_env                /home/user/miniconda3/envs/data_env
+#
+#
+#     base — базовое окружение Conda, создаётся при установке.
+#
+#     * — текущее активное окружение.
+#
+#     Остальные строки — пользовательские окружения и их пути.
+#
+#
+#
+#
+#
+#     2. conda create -n env_name python=3.5 - cоздаёт новое виртуальное
+#     окружение Conda с именем env_name и устанавливает в него Python 3.5.
+#
+#
+#
+#     3. conda env update -n env_name -f file.yml — Обновляет существующее окружение env_name на основе конфигурации из файла file.yml.
+#
+#
+#     4. После создания: conda activate env_name
+#     5. Деактивировать: conda deactivate
+#
+#
+#
+#
+#     6. conda clean — очищает различные кеши и временные файлы.
+#
+#     -a — опция, которая указывает на полную очистку,
+#     включая все пакеты и кеши.
 #
 #
 #
@@ -283,7 +264,5 @@ imag4
 # conda activate myenv  # Активация
 #
 # conda install numpy pandas  # Установка библиотек
-
-
-
-
+#
+#
