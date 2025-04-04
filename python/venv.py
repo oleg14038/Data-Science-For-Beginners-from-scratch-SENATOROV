@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-#     1. python -m venv venv - создаёт виртуальное окружение в папке venv.
+# 1. python -m venv venv - создаёт виртуальное окружение в папке venv.
 #
 #     Разбор:
 #
@@ -52,9 +52,9 @@ from PIL import Image
 #     Сохранение списка пакетов в файл
 #
 #
-#     1. pip freeze > requirements.txt - Создаст файл requirements.txt, который можно использовать для установки зависимостей в другом окружении
+#           1. pip freeze > requirements.txt - Создаст файл requirements.txt, который можно использовать для установки зависимостей в другом окружении
 #
-#     2. pip install -r requirements.txt - Устанавливает пакеты, указанные в requirements.txt.
+#           2. pip install -r requirements.txt - Устанавливает пакеты, указанные в requirements.txt.
 #
 #
 #
@@ -119,7 +119,7 @@ imag2
 
 # 4 Как установить необходимые пакеты внутрь виртуального окружения для conda/venv?
 #
-# Установите нужные пакеты через pip: pip install numpy pandas scikit-learn
+# 1. Установите нужные пакеты через pip: pip install numpy pandas scikit-learn
 #
 # Чтобы сохранить установленные пакеты в файл, используйте: pip freeze > requirements.txt
 #
@@ -144,8 +144,7 @@ imag2
 #
 #
 
-# 5.
-# pip freeze > requirements.txt
+# 5. pip freeze > requirements.txt
 # conda env export > environment.yml - Эти команды используются для сохранения списка установленных пакетов, чтобы в будущем можно было легко восстановить окружение.
 #
 #
@@ -158,8 +157,7 @@ imag3 = Image.open("C:/Users/adm/Pictures/VENV4.PNG")
 imag3
 # -
 
-# 6.
-# pip install -r requirements.txt (для venv) - Устанавливает библиотеки, перечисленные в requirements.txt, с указанными версиями.
+# 6.pip install -r requirements.txt (для venv) - Устанавливает библиотеки, перечисленные в requirements.txt, с указанными версиями.
 #
 # Как использовать?
 #
