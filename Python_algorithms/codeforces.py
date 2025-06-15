@@ -69,7 +69,7 @@ def calculate_steps() -> None:
     Необходимых слону для достижения целевой позиции.
     """
     destination = int(
-        input("Введите целевую позицию: "),
+        input("Введите целевую позицию: ")
     )  # Ввод пользователя и преобразование в целое число
     current_position = 0  # Текущее положение слона
     steps_count = 0  # Количество выполненных шагов
@@ -131,16 +131,26 @@ print(number_two / 2 - number_two * (number_two % 2))
 
 
 # +
-def calculate_half_number(first_number: int) -> int:
-    """Функция принимает целое число и возвращает результат вычислений."""
-    if first_number % 2 == 0:
+def f(first_number: int) -> int:
+    """Функция принимает целое число и возвращает результат вычислений.
+
+    - Если число четное, возвращает его половину.
+    - Если число нечетное, возвращает отрицательное.
+    значение половины этого числа, уменьшенного на 1.
+
+    :param first_number: Целое число.
+    :return: Результат вычислений в виде целого числа.
+    """
+    if first_number % 2 == 0:  # После if должно следовать выражение,
+        # результатом которого будет boolean
         return first_number // 2
+
     return (-first_number - 1) // 2
 
 
 # input(): функция возращает введенную пользователем строку до нажатия enter
 user_input = int(input())
-print(calculate_half_number(user_input))
+print(f(user_input))
 
 # +
 total_numbers = int(input())  # Ввод целого числа от пользователя
@@ -248,7 +258,7 @@ print(1 / int(input()) * sum(map(int, input().split())))
 # Таким образом, пользовательский ввод будет
 # интерпретироваться как делитель в дальнейшем выражении.
 
-# 3. input().split() считывает ввод п��льзователя, а затем разбивает
+# 3. input().split() считывает ввод пользователя, а затем разбивает
 # его на отдельные элементы по пробелам.
 # Функция split() без аргументов разделяет строку на отдельные слова.
 # Распакуется в список слов,
@@ -387,8 +397,7 @@ def calculate_modulo_difference() -> None:
 
     for _ in range(test_cases):
         dividend, divisor = map(
-            int,
-            input("Введите два числа, разделенные пробелом: ").split(),
+            int, input("Введите два числа, разделенные пробелом: ").split()
         )
         result_the_same = (divisor - dividend % divisor) % divisor
         print(result_the_same)
