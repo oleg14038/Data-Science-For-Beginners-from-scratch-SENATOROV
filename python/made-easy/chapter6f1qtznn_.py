@@ -1,15 +1,13 @@
 # %%NBQA-CELL-SEPe1e469
 """The module typing need for iteration."""
-from typing import Iterator
+from collections.abc import Iterator
 
 
 # %%NBQA-CELL-SEPe1e469
 def lemonade_stall(price: int) -> None:
     """Проверяет цену.
 
-    Выводит:.
-    Ингредиенты напитков в зависимости от стоимости.
-
+    Выводит:. Ингредиенты напитков в зависимости от стоимости.
     """
     if price == 5:
         print("Лимонад сделан из:")
@@ -32,11 +30,9 @@ lemonade_stall(5)
 
 # %%NBQA-CELL-SEPe1e469
 def my_name(first_name: str, last_name: str) -> None:
-    """
-    Функция выводит полное имя.
+    """Функция выводит полное имя.
 
-    :param first_name: Имя.
-    :param last_name: Фамилия.
+    :param first_name: Имя. :param last_name: Фамилия.
     """
     print(f"Ваше имя: {first_name} {last_name}")
 
@@ -64,8 +60,7 @@ fib(100)
 def greet(name: str, age: int) -> None:
     """Выводит приветствие с именем и возрастом.
 
-    :param name: Имя человека.
-    :param age: Возраст человека.
+    :param name: Имя человека. :param age: Возраст человека.
     """
     print(f"Привет, {name}. Тебе {age} лет.")
 
@@ -136,15 +131,14 @@ def parrot(
     act: str = "comes_to_life",
     type_color: str = "Norwegian Blue",
 ) -> None:
-    """
-    Функция выводит информацию о попугае в.
+    """Функция выводит информацию о попугае в.
 
     зависимости от состояния и напряжения.
 
-    :param volt: Напряжение (обязательный параметр).
-    :param state: Состояние попугая (по умолчанию 'dead').
-    :param act: Действие попугая (по умолчанию 'comes_to_life').
-    :param type_color: Тип попугая (по умолчанию 'Norwegian Blue')
+    :param volt: Напряжение (обязательный параметр). :param state: Состояние
+    попугая (по умолчанию 'dead'). :param act: Действие попугая (по умолчанию
+    'comes_to_life'). :param type_color: Тип попугая (по умолчанию 'Norwegian
+    Blue')
     """
     print("- Это попугай не", act, end=" ")
     print("Even if you skip it", volt, "volt through it")
@@ -195,8 +189,7 @@ parrot(100000, state="flying with angels")
 
 # %%NBQA-CELL-SEPe1e469
 def try_function(*args: str, **kwargs: str | int) -> None:
-    """
-    Функция принимает произвольное количество позиционных.
+    """Функция принимает произвольное количество позиционных.
 
     именованных аргументов.
 
@@ -227,8 +220,7 @@ try_function(
 
 # %%NBQA-CELL-SEPe1e469
 def inclusive_range(*args: int) -> Iterator[int]:
-    """
-    Функция, которая генерирует последовательность.
+    """Функция, которая генерирует последовательность.
 
     чисел от start до stop с шагом step.
 
