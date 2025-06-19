@@ -24,9 +24,6 @@ from PIL import Image
 #     Windows (PowerShell): venv\Scripts\Activate.ps1
 #
 #     Linux/macOS: source venv/bin/activate
-#
-#
-#
 
 #     1.1  pip list - выводит список установленных пакетов в текущем окружении Python.
 #
@@ -55,11 +52,6 @@ from PIL import Image
 #         1. pip freeze > requirements.txt - Создаст файл requirements.txt, который можно использовать для установки зависимостей в другом окружении
 #
 #         2. pip install -r requirements.txt - Устанавливает пакеты, указанные в requirements.txt.
-#
-#
-#
-#
-#
 
 # 2. Что делает каждая команда в списке ниже ?
 #
@@ -104,9 +96,6 @@ from PIL import Image
 #
 #     -a — опция, которая указывает на полную очистку,
 #     включая все пакеты и кеши.
-#
-#
-#
 
 imag = Image.open("C:/Users/adm/Pictures/VENV1.PNG")
 imag
@@ -135,22 +124,10 @@ imag2
 #         Чтобы сохранить список установленных пакетов: conda list --explicit > environment.txt
 #
 #         Для восстановления окружения: conda create --name SENATOROV --file environment.txt
-#
-#
-#
-#
-#
-#
-#
-#
-#
 
 # 5. pip freeze > requirements.txt
 #
 #     conda env export > environment.yml - Эти команды используются для сохранения списка установленных пакетов, чтобы в будущем можно было легко восстановить окружение.
-#
-#
-#
 
 # +
 5.1
@@ -179,7 +156,6 @@ imag3
 #
 #     conda env create -f environment.yml
 #     conda activate SENATOROV
-#
 
 # 7. pip list -  Выводит список всех установленных пакетов в текущем виртуальном окружении.
 #
@@ -263,5 +239,3 @@ imag4
 # conda activate myenv  # Активация
 #
 # conda install numpy pandas  # Установка библиотек
-#
-#

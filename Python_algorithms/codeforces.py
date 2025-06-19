@@ -10,7 +10,6 @@ import sys
 # -
 
 # #### https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math
-#
 
 # +
 watermelon_weight = int(input("Введите вес арбуза: "))
@@ -302,8 +301,6 @@ print(average)
 # -
 
 # #### https://codeforces.com/problemset/problem/200/B
-#
-#
 
 
 # +

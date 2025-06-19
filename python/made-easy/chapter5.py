@@ -1,6 +1,10 @@
 # +
 """from typing import List: для работы с типами списков."""
 
+# Удален неиспользуемый импорт List
+
+# -
+
 # Операторы управления потоком
 
 # Оператор if
@@ -48,7 +52,7 @@ if 5 < x_two < 10:
 
 if x_two < 3 or x_two > 7:
     print(
-        "x_two меньше 3 или больше 7",
+        "x_two меньше 3 или больше 7"
     )  # Достаточно, чтобы одно из условий было истинным
 # -
 
@@ -285,11 +289,7 @@ for number_two in range(2, 10):
         if number_two % divisor == 0:
             # Если число делится на делитель без остатка
             print(
-                number_two,
-                "equals",
-                divisor,
-                "*",
-                number_two // divisor,
+                number_two, "equals", divisor, "*", number_two // divisor
             )  # Число не простое
             break  # Прерываем цикл, так как число не простое
     else:
